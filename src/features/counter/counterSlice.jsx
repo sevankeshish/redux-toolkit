@@ -10,10 +10,12 @@ const counterSlice = createSlice({
   // immutable state based off those changes
   reducers: {
     increment: (state, action) => {
-      state.value += 1;
+      // state.value += 1;
+      state.value += action.payload;
     },
     decrement: (state, action) => {
-      state.value -= 1;
+      // state.value -= 1;
+      state.value -= action.payload;
     },
   },
 });
